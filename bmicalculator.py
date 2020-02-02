@@ -3,7 +3,8 @@
 height = float(input("Please enter your height (CMs): "))
 weight = float(input("Please enter uour weight (KGs): "))
 
-bmi = weight / ((height/100)**2)
+bmi = weight / (height/100)**2
+bmi = round(bmi,2)
 
 print("Your BMI score is: ", bmi)
 if bmi >= 30:
