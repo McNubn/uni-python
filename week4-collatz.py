@@ -3,15 +3,22 @@
 # At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, 
 # multiply it by three and add one. Have the program end if the current value is one.
 
+# Request the user to enter a positive integer. Capturing it as an integer, to ensure that they do not enter a string.
+number = int(input("Please enter a positive integer: "))
+# In order to print the results in 1 line, like the example, I will add them to a list. I may revise this later.
+calculations = []
 
-x = int(input("Please enter a positive number, and I'll do some magic here for you."))
-
-while x > 1:
-    if x % 2 == 0:
-        x = x / 2
-        print("The number is even, so now I'm going to half it to make", x)
+while number > 1:
+    if number % 2 == 0:
+        number = number / 2
+        # With the division involved, the integers are changing to floats. As only even numbers are being divided, I can keep everything as an integer
+        # without losing anything.
+        calculations.append(int(number))
+        # In a real scenario I'd consider adding some element to provide the user context on what is happening in the calculations, such as: 
+        # print("The number is even, so now I'm going to half it to make", number)
     else:
-        x = (x * 3) + 1
-        print("The number is odd, so now I'm going to triple it and add 1 to make", x)
+        number = (number * 3) + 1
+        calculations.append(int(number))
+        # print("The number is odd, so now I'm going to triple it and add 1 to make", number)
 else:
-    print("And that brings us to 1. Job done. Goodnight!")
+    print(calculations)
