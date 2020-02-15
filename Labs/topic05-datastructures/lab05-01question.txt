@@ -1,0 +1,18 @@
+What are the variable types of the following variables in the code above
+a. numberOfQuestions (integer)
+b. averageAge (float)
+c. debugMode (Boolean)
+d. name (string)
+e. ages (list) - or an (array)
+f. months (tuple)
+g. months[1] (string)
+h. book (dictionary)
+i. stuff (list)
+j. stuff[2] (boolean)
+k. someone (dictionary)
+l. someone["firstname"] (string)
+m. me (dictionary)
+n. me["teaching"] (dictionary) - wrong (array/list)
+o. me["teaching"][0]["semester"] (integer)
+p is a trick question look at it carefully
+p. me["teaching"][0]["coursename"] (string) - wrong (undefined)
