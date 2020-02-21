@@ -1,0 +1,8 @@
+Look at the program above:
+a. What will be printed out when this program is run?
+    Nothing will be printed out. It returns a * 2, but then nothing is done with it.
+
+b. What would you add to the program to get it to print out what the calling the function yo(3) returns?
+    Add another line to print the result e.g.
+        print(yo(3))
+        
