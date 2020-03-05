@@ -1,0 +1,5 @@
+a. The program will show an error saying that test-a.txt doesn't exist.
+b. 7 & 13 - the program creates the file with that text and returns the number of characters. Each time the file is written to in this state, all the data is overwritten.
+c. The last thing that was written will be in the file, with all previous content having been overwritten. So in this case it's "another line \n"
+d. The contents for this file will be "test d \n another line \n". This is because the second part of the program is appending the "another line" onto the first line, and so nothing is overwritten.
+
