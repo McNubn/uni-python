@@ -52,7 +52,7 @@ Output on Wednesday:
 
 Description for this is split into two parts to describe what the function and program are doing.
 
-a) sqrt.py
+### a) sqrt.py
 
 This function is based off an example found on https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo.
 
@@ -62,7 +62,7 @@ Alongside we also set a level of precision that we're comfortable with, and so i
 
 It then goes until a while loop, whereby as long as x minus r squared is larger than the precision variable it will perform the next step. That next step is to add r and x together, divide it by r, and then divde that by 2. This gives us a new next guess to run with, as the while loop is then performed on this new r figure. In the event that x minus r squared is less than the precision, we'll know we're close enough to declare r as the square root.
 
-b) week6-squareroot.py
+### b) week6-squareroot.py
 
 This program imports the above mentioned sqrt function, and requests the user to input a float. This float is then put through the sqrt function to return the approximate square root if the initial input.
 
@@ -81,7 +81,15 @@ This program plots the values of f(x)=x, g(x)=x squared and h(x)=x cubed within 
 
 Numpy allows the program to generate an array of values from 0 to 4.1 (as the upper value is not included, I have set it to 4.1 so that 4 will be include in this) in steps of 0.5. The steps of 0.5 will allow for more markers on the plot, and thus give a bit of a smoother line. We use numpy arrays for this, as we can then square and cube the values in that array for g(x) and h(x).
 
-It then uses pyplot to plot each of these three functions onto the same set of axes. Each function has the original numpy array as their x axis, and their respective function results on the y axis. These plots have also been labeled (with some use of Python's encoding to add the appropriate squared and cubed symbols - https://www.fileformat.info/info/unicode/char/b2/index.htm), alongside labels on the x and y axis, a title and a legend.
+It then uses pyplot to plot each of these three functions onto the same set of axes. Each function has the original numpy array as their x axis, and their respective function results on the y axis. These plots have also been labeled (with some use of Python's encoding to add the appropriate squared and cubed symbols - (https://www.fileformat.info/info/unicode/char/b2/index.htm), alongside labels on the x and y axis, a title and a legend.
 
 Output:
 ![week 8 output](https://screenshot.click/24_24-pdhi3-8j8pj.jpg)
+
+# Contributors
+
+All contributions and commits to this repo have been made by me, Brian Doheny.
+
+McNubn is my personal GitHub account created especially for this project.
+
+OtherBrian is the GitHub account I use for work. As I have been using my work laptop for the majority of this, most of the commits will be from the OtherBrian account. I will happily provide evidence of my OtherBrian account if required.
