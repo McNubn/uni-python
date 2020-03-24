@@ -7,11 +7,12 @@ height = float(input("Enter height (CMs): "))
 
 # Calculating the user's BMI based on their inputs.
 # Weight doesn't need any changing as captured in KG already, but the Height needs to be coverted in Metres (rather than the CMs captured).
-# Therefore fight is divided by 100 first to give the Metres value, which can then be squared.
+# Therefore height is divided by 100 first to give the Metres value, which can then be squared.
 # The weight is then divided by the height in metres squared.
+# Rounding the BMI figure to 2 decimal places, just to keep it tidy for the user. 
+
 bmi = round(weight / (height/100)**2,2)
 
-# Rounding the BMI figure to 2 decimal places, just to keep it tidy for the user. Otherwise we may end up with a lot of digits are the decimal point.
 
 
 print("BMI is ", bmi)

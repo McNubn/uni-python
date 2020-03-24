@@ -2,13 +2,11 @@
 # Write a program that takes a positive floating-point number as input and 
 # outputs an approximation of its square root.
 
-# Now importing the sqrt function from the sqrt file.
+# Importing the sqrt function from the sqrt file.
 from sqrt import sqrt
 
-# Asking the user to input a floating point number.
+# Ask user to input a float, save it to x for use in the sqrt function.
 x = float(input("Please enter a positive number: "))
-
-# Take their result and run the sqrt function on it.
 result = sqrt(x)
 # Rounding the answer to 1 decimal places - makes it a bit tidier, and brings it inline with sample answer.
 result = round(result,1)
