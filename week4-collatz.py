@@ -6,7 +6,7 @@
 # Request the user to enter a positive integer. Capturing it as an integer, to ensure that they do not enter a string.
 number = int(input("Please enter a positive integer: "))
 # In order to print the results in 1 line, like the example, I will add them to a list. I may revise this later (note - Whirldwind tour of python page 38 "for loops" section had a better solution)
-calculations = []
+calculations = [number,]
 
 while number > 1:
     if number % 2 == 0:
